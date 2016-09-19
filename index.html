@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="Author" content="Punit Web">
+
+    <link rel="stylesheet" href="styles/main.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro:200" rel="stylesheet">
+    <title>APPLE | Concept by PunitWeb</title>
+  </head>
+  <body lang="en" onload="Start()">
+    <div class="loading" id="loadni">
+      <div>
+        <img src="images/black-gradient-top.png" class="load-black">
+      <img src="images/apple.png" class="load ein">
+      <img src="images/apple-1.png" class="load zwei">
+      <img src="images/apple-2.png" class="load drei">
+      <img src="images/apple-3.png" class="load vier">
+      <h2>loading...</h2>
+      </div>
+
+    </div>
+    <div class="wrap one">
+      <div class="first section">
+        <div class="heading parallax">
+          <h1><p>The</p>iPhone <h2>7</h2></h1>
+        </div>
+        <div class="know-more">
+          Know More
+          <div class="box">
+            <img src="images/black-gradient.png" draggable="false">
+        </div>
+        </div>
+        <div class="hero-image" id="item">
+          <section>
+          <img src="images/multi.jpg" draggable="false">
+          <img src="images/black-gradient.png" draggable="false">
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- second -->
+    <div class="wrap two">
+      <div class="hero-image">
+        <section class="parallax">
+        <img src="images/watch-one.jpg">
+        <img src="images/white-gradient-top.png">
+        </section>
+        <div class="heading">
+          <h1>Watch<h2>Series <span class="mini-parallax">2</span> <div class="know-more">
+            Know More
+            <div class="box">
+              <img src="images/white-gradient-top.png" draggable="false">
+          </div></h2></h1>
+        </div>
+      </div>
+    </div>
+    <!-- second -->
+    <div class="wrap three">
+      <div class="hero-image">
+
+        <section class="parallax">
+        <img src="images/macos1.png" draggable="false">
+        </section>
+
+      </div>
+<h1 class="mini-parallax-two">Sierra <span class="know-more">Know More</span></h1>
+      <img src="images/sierra-gradient.png" class="grade" draggable="false">
+    </div>
+
+    <!-- the knoe more's -->
+
+    <div class="sevenphone">
+      <div class="content">
+        <img src="images/phone7-side.png">
+      </div>
+    </div>
+
+    <!-- ????? -->
+    <footer>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+    <script type="text/javascript">
+    function Start(){
+      var v = document.getElementById("loadni");
+      v.style.display = "none";
+    }
+    window.sr = ScrollReveal({ reset: true });
+    sr.reveal('.mini-parallax-two', { duration: 900, delay:500,distance: '0px',viewFactor: 0.1 });
+    sr.reveal('.mini-parallax', { duration: 900, delay:300,distance: '0px',viewFactor: 0.1 });
+    sr.reveal('.parallax', { duration: 800, delay:0,distance: '100px',viewFactor: 0.1 });
+
+    $(function(){
+      $('body').ready(function() {
+        $('html').css("overflow-y","scroll");
+      });
+      $('.know-more').click(function(){
+        $('html, body').animate({scrollTop : 0}, 480);
+        $('.loading').fadeIn(600);
+        $('.one, .two, .three').fadeOut(200);
+      });
+      $('.know-more:eq(0)').click(function(){
+        $('.sevenphone').fadeOut(0).delay(1000).fadeIn(300);
+      });
+    });
+    </script>
+    </script>
+  </body>
+</html>
