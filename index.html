@@ -24,8 +24,8 @@
     </div>
     <div class="wrap one">
       <div class="first section">
-        <div class="heading parallax">
-          <h1><p>The</p>iPhone <h2>7</h2></h1>
+        <div class="heading">
+          <h1 id="parallax"><p>The</p>iPhone <h2 id="parallax">7</h2></h1>
         </div>
         <div class="know-more">
           Know More
@@ -44,12 +44,12 @@
     <!-- second -->
     <div class="wrap two">
       <div class="hero-image">
-        <section class="parallax">
+        <section id="parallax">
         <img src="images/watch-one.jpg">
         <img src="images/white-gradient-top.png">
         </section>
         <div class="heading">
-          <h1>Watch<h2>Series <span class="mini-parallax">2</span> <div class="know-more">
+          <h1>Watch<h2>Series <span id="mini-parallax">2</span> <div class="know-more">
             Know More
             <div class="box">
               <img src="images/white-gradient-top.png" draggable="false">
@@ -59,23 +59,94 @@
     </div>
     <!-- second -->
     <div class="wrap three">
-      <div class="hero-image">
-
-        <section class="parallax">
+      <div class="hero-image" id="parallax">
+<span class="know-more mac">Know More</span>
+        <section>
+          <h1 id="mini-parallax-two">Sierra</h1>
+          <p>
         <img src="images/macos1.png" draggable="false">
         </section>
-
       </div>
-<h1 class="mini-parallax-two">Sierra <span class="know-more">Know More</span></h1>
+
       <img src="images/sierra-gradient.png" class="grade" draggable="false">
     </div>
 
     <!-- the knoe more's -->
 
     <div class="sevenphone">
+      <img src="images/left.png" draggable="false" id="goback">
       <div class="content">
-        <img src="images/phone7-side.png">
+        <img src="images/large-one.jpg" class="phone1">
+        <img src="images/black-gradient-top.png" class="grade">
+        <h1>iPhone <span>7</span> <p>
+          the best iPhone ever
+        </p>
+        <p id="tagline">
+          Arguabely the best iPhone ever made; crafted with the finest materials inside out
+        </p>
+      </h1>
       </div>
+      <p>
+
+        <div class="content dos">
+          <div class="camera">
+
+            <div>
+              <h1><p>an outstanding</p>Camera</h1>
+              <img src="images/black-gradient-top.png" id="shade1">
+              <img src="images/main-camera.jpg" id="main-camera">
+              <img src="images/black-gradient-top.png" id="shade2">
+            </div>
+            <center>
+            <ul>
+              <center><h4>Pictures taken by the iPhone 7 camera</h4></center>
+              <li><img src="images/camera2.jpg"><img src="images/camera2-small.jpg" id="small"></li>
+              <li><img src="images/camera3.jpg"><img src="images/camera3-small.jpg" id="small"></li>
+              <li><img src="images/camera4.jpg"><img src="images/camera4-small.jpg" id="small"></li>
+            </ul>
+            </center>
+          </div>
+        </div>
+    </div>
+
+    <div class="macos">
+      <img src="images/left.png" draggable="false" id="goback" class="backmac">
+
+      <div class="cover"><div id="grade"></div>
+      <div class="disc">
+        <h1>macOS <br><span>Sierra</span></h1>
+        <p>
+          Siri makes its debut on Mac, with new capabilities designed just for the desktop. And that’s not the only way your Mac is smarter. macOS Sierra helps you rediscover your best photos, work more seamlessly between devices and free up valuable storage space. Now your Mac does even more for you, so you can do more with your Mac.
+        </p>
+      </div>
+    </div>
+    <div class="moreone">
+      <img src="images/intergratemac.jpg" draggable="false">
+      <div class="disc">
+        <h1 id="parallax">Seamless Intergration</h1>
+        <span id="mini-parallax">Copy images, videos and text from an app on your iPhone. Then paste into another app on your nearby Mac — or vice versa. There are no extra steps. Just copy and paste as you normally do. Find a great recipe while browsing on your Mac? Paste the ingredients directly to the grocery list on your iPhone.</span>
+      </div>
+    </div>
+    <div class="moretwo">
+      <img src="images/cloud.png" draggable="false">
+      <div class="disc">
+        <h1 id="parallax">Everything Synced</h1>
+        <span id="mini-parallax">Access the files on your Mac desktop directly on your iPhone. Now the files on your desktop and in your Documents folder — where most files are saved — can be automatically stored and updated in iCloud Drive, so you can always access them on your iOS devices and even another Mac.</span>
+      </div>
+    </div>
+    <div class="morethree">
+      <img src="images/trip.png" draggable="false">
+      <div class="disc">
+        <h1 id="parallax">More Apps, More Color, More Beutiful</h1>
+
+      </div>
+    </div>
+
+    <div class="morefour">
+      macOS Sierra
+      <br>
+      <span>2016</span>
+    </div>
     </div>
 
     <!-- ????? -->
@@ -89,10 +160,10 @@
       var v = document.getElementById("loadni");
       v.style.display = "none";
     }
-    window.sr = ScrollReveal({ reset: true });
-    sr.reveal('.mini-parallax-two', { duration: 900, delay:500,distance: '0px',viewFactor: 0.1 });
-    sr.reveal('.mini-parallax', { duration: 900, delay:300,distance: '0px',viewFactor: 0.1 });
-    sr.reveal('.parallax', { duration: 800, delay:0,distance: '100px',viewFactor: 0.1 });
+    window.sr = ScrollReveal({ reset: false });
+    sr.reveal('#mini-parallax-two', { duration: 900, delay:500,distance: '0px',viewFactor: 0.1 });
+    sr.reveal('#mini-parallax', { duration: 900, delay:300,distance: '0px',viewFactor: 0.1 });
+    sr.reveal('#parallax', { duration: 800, delay:0,distance: '100px',viewFactor: 0.1 });
 
     $(function(){
       $('body').ready(function() {
@@ -105,6 +176,21 @@
       });
       $('.know-more:eq(0)').click(function(){
         $('.sevenphone').fadeOut(0).delay(1000).fadeIn(300);
+        $('.loading').fadeOut(300);
+      });
+      $('.mac').click(function(){
+        $('.macos').fadeOut(0).delay(1000).fadeIn(300);
+        $('.loading').fadeOut(300);
+      });
+      $('#goback').click(function(){
+        $('.sevenphone').fadeOut(300);
+        $('.loading').fadeIn(100).delay(500).fadeOut(300);
+        $('.one, .two, .three').fadeIn(200);
+      });
+      $('.backmac').click(function(){
+        $('.macos').fadeOut(300);
+        $('.loading').fadeIn(100).delay(500).fadeOut(300);
+        $('.one, .two, .three').fadeIn(200);
       });
     });
     </script>
