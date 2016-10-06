@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="cache.appcache">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
@@ -25,7 +25,7 @@
     <div class="wrap one">
       <div class="first section">
         <div class="heading">
-          <h1 id="parallax"><p>The</p>iPhone <h2 id="parallax">7</h2></h1>
+          <h1 id="parallax-two"><p>The</p>iPhone <h2 id="parallax-two">7</h2></h1>
         </div>
         <div class="know-more">
           Know More
@@ -41,23 +41,7 @@
         </div>
       </div>
     </div>
-    <!-- second -->
-    <div class="wrap two">
-      <div class="hero-image">
-        <section id="parallax">
-        <img src="images/watch-one.jpg">
-        <img src="images/white-gradient-top.png">
-        </section>
-        <div class="heading">
-          <h1>Watch<h2>Series <span id="mini-parallax">2</span> <div class="know-more">
-            Know More
-            <div class="box">
-              <img src="images/white-gradient-top.png" draggable="false">
-          </div></h2></h1>
-        </div>
-      </div>
-    </div>
-    <!-- second -->
+
     <div class="wrap three">
       <div class="hero-image" id="parallax">
 <span class="know-more mac">Know More</span>
@@ -107,7 +91,30 @@
             </center>
           </div>
         </div>
+        <div class="moreone">
+          <img src="images/camera.jpg" draggable="false">
+          <div class="disc">
+            <h1 id="parallax">Seamless Intergration</h1>
+            <span id="mini-parallax">Copy images, videos and text from an app on your iPhone. Then paste into another app on your nearby Mac — or vice versa. There are no extra steps. Just copy and paste as you normally do. Find a great recipe while browsing on your Mac? Paste the ingredients directly to the grocery list on your iPhone.</span>
+          </div>
+        </div>
+        <div class="moretwo">
+          <img src="images/render.jpg" draggable="false">
+          <div class="disc">
+            <h1 id="parallax">Everything Synced</h1>
+            <span id="mini-parallax">Access the files on your Mac desktop directly on your iPhone. Now the files on your desktop and in your Documents folder — where most files are saved — can be automatically stored and updated in iCloud Drive, so you can always access them on your iOS devices and even another Mac.</span>
+          </div>
+        </div>
+        <div class="morethree">
+          <img src="images/white-grade.png" draggable="false" class="grade" id="mini-parallax">
+          <div class="disc">
+            <h1 id="parallax"><img src="images/refer.png"></h1>
+
+          </div>
+        </div>
+
     </div>
+
 
     <div class="macos">
       <img src="images/left.png" draggable="false" id="goback" class="backmac">
@@ -117,6 +124,8 @@
         <h1>macOS <br><span>Sierra</span></h1>
         <p>
           Siri makes its debut on Mac, with new capabilities designed just for the desktop. And that’s not the only way your Mac is smarter. macOS Sierra helps you rediscover your best photos, work more seamlessly between devices and free up valuable storage space. Now your Mac does even more for you, so you can do more with your Mac.
+          <br><br><br>
+          <b><span style="letter-spacing:0px; margin-right:0px !important;">Read Ahead</span></b>
         </p>
       </div>
     </div>
@@ -149,6 +158,22 @@
     </div>
     </div>
 
+
+    <div class="wrap two">
+      <div class="hero-image">
+
+        <img src="images/refer.png" draggable="false" id="yo">
+
+
+        <section id="mini-parallax-two">
+        <img src="images/white-grade.png" draggable="false">
+        </section>
+
+      </div>
+    </div>
+    <!-- second -->
+
+
     <!-- ????? -->
     <footer>
 
@@ -164,6 +189,7 @@
     sr.reveal('#mini-parallax-two', { duration: 900, delay:500,distance: '0px',viewFactor: 0.1 });
     sr.reveal('#mini-parallax', { duration: 900, delay:300,distance: '0px',viewFactor: 0.1 });
     sr.reveal('#parallax', { duration: 800, delay:0,distance: '100px',viewFactor: 0.1 });
+    sr.reveal('#parallax-two', { duration: 800, delay:200,distance: '100px',viewFactor: 0.1 });
 
     $(function(){
       $('body').ready(function() {
