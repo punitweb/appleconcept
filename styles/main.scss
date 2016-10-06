@@ -262,12 +262,14 @@ body{
 }
 // second section -- apple watch series 2 //
 .two{
+
   position: relative;
   top: 100%;
   left: 0;
   height: 100%;
   width: 100%;
-  background: $watch;
+  background: url(../images/selfie.jpg) center center no-repeat;
+  @include cover();
   z-index: 80;
   overflow: hidden;
     .hero-image{
@@ -276,16 +278,14 @@ body{
       width: 100%;
       position:relative;
       top: 0px;
+      #yo{
+          width: 80%;
+          position: absolute;
+          top: 40%;
+          z-index: 1000;
+        }
 
-      img:nth-child(1){
-        max-width: 40%;
-        position: absolute;
-        @include center;
-        top: 100%;
-        @include trans(0.8s, ease);
-        opacity: 0.3;
-      }
-      img:nth-child(2){
+      img{
         width: 100%;
         position: absolute;
         @include center();
@@ -775,16 +775,110 @@ body{
 
 }
 .morefour{
+  padding-top: 0px;
   position: relative;
   top: 0px;
+  left:0;
   width: 100%;
-  height: 100px;
-  background: #f2f2f2;
-  color: #505050;
-  font-size:20px;
-  @include big();
-  letter-spacing: 1px;text-align: right;
-  z-index: -1;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  height: 50% !important;
+  background: url(../images/selfie.jpg) center center no-repeat;
+  background-size: cover;
+  .disc{
+    position: relative;
+      top: 60px !important;
+      transform: translate(0%, 0%);
+      text-align: center;
+      font-size: 42px;
+      @include center();
+      z-index: 120;
+}
+  .grade{
+    position: absolute;
+    top: 0px;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  h1{
+
+  img{
+    width: 180%;
+    position: absolute;
+    z-index: 400;
+    top: 0px;
+  }
+}
+}
+
+
+
+.sevenphone{
+  .moreone{
+    margin-top: 50px;
+    background: #000;
+    color: #fff;
+    position: relative;
+    .disc{
+      color: #fff;
+      left: 15%;
+    }
+    img{
+      width: 40%;
+      bottom: 0px !important;
+      transform: translate(0%, 0%);
+      right: -10px !important;
+    }
+  }
+  .moretwo{
+    margin-top: 50px;
+    background: #121212;
+    position: relative;
+    .disc{
+      color: #fff;
+      right: 15%;
+    }
+    img{
+      width: 40%;
+      bottom: 120px !important;
+      transform: translate(0%, 0%);
+      left: 0px;
+    }
+  }
+  .morethree{
+    margin-top: 50px;
+  }
+  .morethree{
+    padding-top: 0px;
+    position: relative;
+    height: 50%;
+    background: url(../images/selfie.jpg) center center no-repeat;
+    background-size: cover;
+    .disc{
+        top: 60px !important;
+        transform: translate(0%, 0%);
+        text-align: center;
+        font-size: 42px;
+        @include center();
+        z-index: 120;
+    }
+    .grade{
+      position: absolute;
+      top: 0px;
+      left:0;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+    }
+    h1{
+
+    img{
+      width: 180%;
+      position: absolute;
+      @include center();
+
+    }
+  }
+  }
+
 }

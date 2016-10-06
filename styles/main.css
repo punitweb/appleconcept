@@ -200,7 +200,11 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #FAFAFA;
+  background: url(../images/selfie.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   z-index: 80;
   overflow: hidden; }
   .two .hero-image {
@@ -209,21 +213,12 @@ body {
     width: 100%;
     position: relative;
     top: 0px; }
-    .two .hero-image img:nth-child(1) {
-      max-width: 40%;
+    .two .hero-image #yo {
+      width: 80%;
       position: absolute;
-      left: 50%;
-      -webkit-transform: translate(-50%);
-      -moz-transform: translate(-50%);
-      -o-transform: translate(-50%);
-      transform: translate(-50%);
-      top: 100%;
-      -webkit-transition: all 0.8s ease;
-      -moz-transition: all 0.8s ease;
-      -o-transition: all 0.8s ease;
-      transition: all 0.8s ease;
-      opacity: 0.3; }
-    .two .hero-image img:nth-child(2) {
+      top: 40%;
+      z-index: 1000; }
+    .two .hero-image img {
       width: 100%;
       position: absolute;
       left: 50%;
@@ -742,18 +737,97 @@ body {
       line-height: 100%; }
 
 .morefour {
+  padding-top: 0px;
   position: relative;
   top: 0px;
+  left: 0;
   width: 100%;
-  height: 100px;
-  background: #f2f2f2;
-  color: #505050;
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 1px;
-  text-align: right;
-  z-index: -1;
-  padding-bottom: 50px;
-  padding-top: 50px; }
+  height: 50% !important;
+  background: url(../images/selfie.jpg) center center no-repeat;
+  background-size: cover; }
+  .morefour .disc {
+    position: relative;
+    top: 60px !important;
+    transform: translate(0%, 0%);
+    text-align: center;
+    font-size: 42px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+    z-index: 120; }
+  .morefour .grade {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100; }
+  .morefour h1 img {
+    width: 180%;
+    position: absolute;
+    z-index: 400;
+    top: 0px; }
+
+.sevenphone .moreone {
+  margin-top: 50px;
+  background: #000;
+  color: #fff;
+  position: relative; }
+  .sevenphone .moreone .disc {
+    color: #fff;
+    left: 15%; }
+  .sevenphone .moreone img {
+    width: 40%;
+    bottom: 0px !important;
+    transform: translate(0%, 0%);
+    right: -10px !important; }
+.sevenphone .moretwo {
+  margin-top: 50px;
+  background: #121212;
+  position: relative; }
+  .sevenphone .moretwo .disc {
+    color: #fff;
+    right: 15%; }
+  .sevenphone .moretwo img {
+    width: 40%;
+    bottom: 120px !important;
+    transform: translate(0%, 0%);
+    left: 0px; }
+.sevenphone .morethree {
+  margin-top: 50px; }
+.sevenphone .morethree {
+  padding-top: 0px;
+  position: relative;
+  height: 50%;
+  background: url(../images/selfie.jpg) center center no-repeat;
+  background-size: cover; }
+  .sevenphone .morethree .disc {
+    top: 60px !important;
+    transform: translate(0%, 0%);
+    text-align: center;
+    font-size: 42px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+    z-index: 120; }
+  .sevenphone .morethree .grade {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100; }
+  .sevenphone .morethree h1 img {
+    width: 180%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%); }
 
 /*# sourceMappingURL=main.css.map */
